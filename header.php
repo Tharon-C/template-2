@@ -32,7 +32,8 @@
                 <div class="business-info section-top clear">
                     
                     <div class="page-wrapper clear">
-                    <?php dynamic_sidebar('widget-area-1'); ?>
+                    <?php dynamic_sidebar('top-l'); ?>
+                    <?php dynamic_sidebar('top-r'); ?>
 					</div>
                     
                 </div>
@@ -55,5 +56,5 @@
                  </div>
 					</nav>
 					<!-- /nav -->
-      
+      		</header>
 			<!-- /header -->

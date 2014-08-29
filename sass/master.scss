@@ -1,9 +1,10 @@
 $font-1:'Open Sans', sans-serif;
 $grey-1: white;
 $grey-2: #F2F2F2;
-$grey-3:lightgrey;
-$color-1:linear-gradient(to bottom, #5f5f5f 0%,#000000 38%,#000000 38%);
-$color-2:#00A9FF;
+$grey-3: rgb(229, 229, 229);
+$grey-4:lightgrey;
+$color-1:#00A9FF;
+$color-2:#0386C9;
 $color-3:rgb(229, 229, 229);
 $color-4:#F7A710;
 $color-5:#9370E9;
@@ -36,26 +37,31 @@ header
 /* business information across the top of header */
 
 .business-info {
-  background:$color-1;
+  background:$color-2;
     padding: 5px;
       a {
-          color: $color-2;
+        color: $color-2;
     }
-    .widget_text {
+    .top-wdgt-l {
+      color:$grey-1;
+      float: left;
+    }
+     .top-wdgt-r {
       color:$grey-1;
       float: right;
     }
-    li {
-      display: inline-block;
-      margin-left: 20px;
-      color: white;
+
+      li {
+        display: inline-block;
+        margin-left: 20px;
+        color: white;
     }
 }
 
-
 /* ==============================================================
 logo
-==================================================================== */
+================================================================= */
+
 .logo {
   float:left;
   width:150px;
@@ -264,7 +270,7 @@ input, textarea {
   display: block;
   padding: .5em;
   margin-bottom: .75em;
-  border: .1em solid #eee;
+  border: .1em solid $grey-4;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -298,37 +304,37 @@ input[type='button'], input[type='submit'], button, .button {
   margin-bottom: .75rem;
 }
 
-.btn-primary {
+.btn-1 {
   color: $grey-1;
   background: $color-2;
 }
-.btn-primary:hover {
+.btn-1:hover {
   background: $color-2;
 }
-.btn-primary:focus, .btn-primary:active {
+.btn-1:focus, .btn-1:active {
   background: $color-2;
 }
 
-.btn-secondary {
+.btn-2 {
    color: $grey-1;
   background: $color-4;
 }
-.btn-secondary:hover {
+.btn-2:hover {
   background: $color-4;
 }
-.btn-secondary:focus, .btn-secondary:active {
+.btn-2:focus, .btn-2:active {
   background: $color-4;
 }
 
-.btn-tertiary {
+.btn-3 {
   font-size: .875em;
-  background: $color-3;
+  background: $grey-3;
 }
-.btn-tertiary:hover {
-  background: $color-3;
+.btn-3:hover {
+  background: $grey-3;
 }
-.btn-tertiary:focus, .btn-tertiary:active {
-  background: $color-3;
+.btn-3:focus, .btn-3:active {
+  background: $grey-3;
 }
 
 /* ==========================================================================
@@ -357,7 +363,7 @@ input[type='button'], input[type='submit'], button, .button {
 .img-1 {
   padding:10px;
   background:$grey-3;
-  box-shadow:$box-shadow-1;
+  box-shadow:$shadow-1;
 }
 
 

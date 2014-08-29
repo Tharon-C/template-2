@@ -219,27 +219,50 @@ function add_slug_to_body_class($classes)
 // If Dynamic Sidebar Exists
 if (function_exists('register_sidebar'))
 {
-    // Define Sidebar Widget Area 1
+    // Define Sidebar Top Left
     register_sidebar(array(
-        'name' => __('Widget Area 1', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-1',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'name' => __('Top Left', 'Area for business info etc'),
+        'description' => __('Area for business info etc', 'html5blank'),
+        'id' => 'top-l',
+        'before_widget' => '<div id="%1$s" class="%2$s top-wdgt-l">',
         'after_widget' => '</div>',
         'before_title' => '<h3 class="title-2">',
         'after_title' => '</h3>'
     ));
 
-    // Define Sidebar Widget Area 2
+    // Define Sidebar Top Right
     register_sidebar(array(
-        'name' => __('Widget Area 2', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
-        'id' => 'widget-area-2',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'name' => __('Top Right', 'Area for business info etc'),
+        'description' => __('Area for business info etc', 'html5blank'),
+        'id' => 'top-r',
+        'before_widget' => '<div id="%1$s" class="%2$s top-wdgt-r">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'
     ));
+
+      // Define Sidebar Sidebar-1
+    register_sidebar(array(
+        'name' => __('Sidebar 1', 'Area for Sidebar, feeds posts etc'),
+        'description' => __('Area for Sidebar, feeds posts etc', 'html5blank'),
+        'id' => 'sidebar-1',
+        'before_widget' => '<div id="%1$s" class="%2$s sidebar-1">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+      // Define Sidebar Footer Items
+    register_sidebar(array(
+        'name' => __('Footer 1', 'Area for footer items, links, site map, logo etc'),
+        'description' => __('Area for footer items, links, site map, logo etc', 'html5blank'),
+        'id' => 'footer-1',
+        'before_widget' => '<div id="%1$s" class="%2$s footer-wdgt-1">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
 
 }
 
