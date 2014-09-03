@@ -19,6 +19,8 @@
 remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
 
+// Adds image path short code. syntax: [img_path file="..."]
+
 add_shortcode('img_path', 'get_relative_image_path_shortcode');
 
 function get_relative_image_path_shortcode($args) {
@@ -26,6 +28,13 @@ function get_relative_image_path_shortcode($args) {
 	$upload_dir = $upload_dir['url'];
 	return $upload_dir.'/'.$args['file'];
 }
+
+//Adds page path shortcode. syntax: [page_path id="..."]
+
+add_shortcode('page_path', function($args) {
+    $id = $args['id'];
+    return get_permalink($id);
+});
 
 
 //google fonts 
