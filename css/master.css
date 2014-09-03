@@ -229,6 +229,10 @@ input[type='button'], input[type='submit'], button, .button {
   margin-bottom: 0.75em;
   margin-bottom: 0.75rem; }
 
+.form-btn-1 {
+  color: white;
+  background: #0386C9 !important; }
+
 .btn-1 {
   color: white;
   background: #0386C9; }
