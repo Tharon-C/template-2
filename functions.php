@@ -37,7 +37,7 @@ add_shortcode('page_path', function($args) {
 });
 
 
-//google fonts 
+//CDN fonts 
 function load_fonts() {
             wp_register_style('open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700');
             wp_enqueue_style( 'open-sans');
@@ -146,9 +146,6 @@ function html5blank_header_scripts()
         wp_register_script('benefits-js', get_template_directory_uri() . '/js/benefits.js', array('jquery')); 
         wp_enqueue_script('benefits-js'); // Enqueue it!
     
-    
-      wp_register_script('learning-js', get_template_directory_uri() . '/js/learning.js', array('jquery')); 
-        wp_enqueue_script('learning-js'); // Enqueue it!
     }
 }
 
@@ -173,10 +170,6 @@ function html5blank_styles()
 
     wp_register_style('master', get_template_directory_uri() . '/css/master.css', array(), '1.0', 'all');
     wp_enqueue_style('master'); // Enqueue it!
-
-    wp_register_style('hack', get_template_directory_uri() . '/css/hack.css', array(), '1.0', 'all');
-    wp_enqueue_style('hack'); // Enqueue it!
-
 }
 
 // Register HTML5 Blank Navigation
