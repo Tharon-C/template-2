@@ -24,7 +24,7 @@ body {font:400 14px 'Open Sans', 'Helvetica', sans-serif,'Arial';position:relati
 .clear:after {clear:both;}
 .clear {*zoom:1;}
 
-a {color: darkgrey;text-decoration:none;}
+a {text-decoration:none;}
 a:hover {color:black;}
 a:focus {outline:0;}
 a:hover,a:active, input:hover {outline:0;transition: 420ms;}
@@ -35,13 +35,9 @@ input {width: 100%;padding: 5px;margin:5px 0;border: solid 1px #E0E0E0;    backg
 
 textarea {overflow: auto;vertical-align: top;width: 100%;padding: 10px;margin: 5px 0;border: solid 1px #E0E0E0;height: 84px;      background: rgb(255, 255, 255);}
 
-p {margin: 10px 0;}
-
 .fa {padding-right:5px}
 
 h1,h2,h3,h4,h5 {margin: 0;font-weight:400;font-size:1em;}
-
-ul li {line-height: 160%;list-style:none;}
 
 article li {margin-bottom: 20px;}
 
@@ -50,6 +46,7 @@ img {display:block;vertical-align:bottom;}
 /*helper classes*/
 .flex {width:100%;}
 .inlineblk{display:inline-block;}
+.block {display: block;}
 .p-l {float:left;}
 .p-r {float:right;}
 .p-c {margin:auto;}
@@ -76,6 +73,8 @@ img {display:block;vertical-align:bottom;}
 .pad-s-5px {padding-right:5px;padding-left:5px;}
 .pad-s-10px {padding-right:10px;padding-left:10px;}
 .pad-s-20px {padding-right:20px;padding-left:20px;}
+.pad-s-30px {padding-right:30px;padding-left:30px;}
+.pad-s-40px {padding-right:40px;padding-left:40px;}
 .pad-s-50px {padding-right:50px;padding-left:50px;}
 .pad-t-5px {padding-top:5px;}
 .pad-t-10px {padding-top:10px;}
@@ -83,6 +82,7 @@ img {display:block;vertical-align:bottom;}
 .pad-t-30px {padding-top:30px;}
 .pad-t-40px {padding-top:40px;}
 .pad-t-50px {padding-top:50px;}
+.pad-t-75px {padding-top:75px;}
 .pad-b-10px {padding-bottom:10px;}
 .pad-b-20px {padding-bottom:20px;}
 .pad-b-30px {padding-bottom:30px;}
@@ -90,6 +90,7 @@ img {display:block;vertical-align:bottom;}
 .pad-b-50px {padding-bottom:50px;}
 .pad-b-75px {padding-bottom:75px;}
 .pad-b-100px {padding-bottom:100px;}
+.pad-tb-10px {padding-top:10px;padding-bottom:10px;}
 .pad-tb-20px {padding-top:20px;padding-bottom:20px;}
 .pad-tb-30px {padding-top:30px;padding-bottom:30px;}
 .pad-tb-40px {padding-top:40px;padding-bottom:40px;}

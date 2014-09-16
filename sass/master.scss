@@ -11,7 +11,9 @@ $color-5:#9370E9;
 $color-6:#DDD5F8;
 $shadow-1:0 1px 2px rgba(0, 0, 0, 0.21);
 
-
+a {
+  color:$color-1;
+}
 
 /* wrapper */
 .wrapper, .wrap {
@@ -30,14 +32,14 @@ $shadow-1:0 1px 2px rgba(0, 0, 0, 0.21);
   padding-left:20px;
 }
 
+.content {
+  padding:50px 0;
+}
 
 /*======================================================== 
 header 
 ==========================================================*/
-.header {
-  width:20%;
-  position:fixed;
-}
+
 
 /* business information across the top of header */
 
@@ -238,12 +240,18 @@ footer {
 /* ===========================================================================
   typography
   =========================================================================== */
+p {margin:0 0 20px;}
+
+ul li, ol li {line-height: 130%;}
+
+
 .headline-1 {
-  color:$color-2;
   display:block;
   font-family:$font-1;
   font-weight: 700;
   font-size:53px;
+  line-height: 1.2em;
+   margin-bottom:15px;
 }
 
 
@@ -252,14 +260,27 @@ footer {
   font-family:$font-1;
   font-weight: 400;
   font-size:42px;
+  line-height: 1.2em;
+   margin-bottom:15px;
 }
 
 
 .title-2 {
   display:block;
   font:$font-1;
-  font-weight:700;
-  font-size:22px;
+  font-weight:400;
+  font-size:24px;
+  line-height: 1.2em;
+  margin-bottom:15px;
+}
+
+.title-3 {
+  display:block;
+  font:$font-1;
+  font-weight:800;
+  font-size:16px;
+  line-height: 1.2em;
+   margin-bottom:10px;
 }
 
 /* ==========================================================================
