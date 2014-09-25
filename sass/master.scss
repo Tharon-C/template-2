@@ -1,3 +1,29 @@
+@function black($opacity){
+    @return rgba(0,0,0,$opacity)
+}
+@function white($opacity){
+    @return rgba(255,255,255,$opacity)
+}
+
+@mixin letterpress($opacity){
+    text-shadow:white($opacity) 0 1px 0;
+}
+
+@mixin box-emboss($opacity, $opacity2){
+    box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+}
+
+@mixin btnHover($baseColor) {
+    background-color: $baseColor;
+    &:hover {
+          background-color: darken($baseColor, 10);
+            }
+    &:active, &:focus {
+      background-color:$baseColor;
+    }
+          }
+
+
 $font-1:'Open Sans', sans-serif;
 $grey-1: white;
 $grey-2: #F2F2F2;
@@ -47,6 +73,7 @@ header
   background:$color-2;
     padding: 5px;
       a {
+
         color: $color-2;
     }
     .top-wdgt-l {
@@ -109,8 +136,9 @@ nav
       display:inline-block;
       margin-left: -4px;
       a {
+         @include letterpress(.4);
         display:block;
-        color: $grey-1;
+        color: $color-2;
         padding: 18px 30px;
         text-transform: uppercase;
         font-size: 14px;
@@ -236,6 +264,34 @@ footer {
   background: $color-6;
 }
 
+.txt-color-1 {
+  color: $color-1;
+}
+
+.txt-color-2 {
+  color: $color-2;
+}
+
+.txt-color-3 {
+  color: $color-3;
+}
+
+.txt-color-4 {
+  color: $color-4;
+}
+
+.txt-color-5 {
+  color: $color-5;
+}
+
+.txt-color-6 {
+  color: $color-6;
+}
+
+.txt-wht {
+  color:$grey-1;
+}
+
 
 /* ===========================================================================
   typography
@@ -262,6 +318,16 @@ ul li, ol li {line-height: 130%;}
   font-size:42px;
   line-height: 1.2em;
    margin-bottom:15px;
+}
+
+.sub-headline-1 {
+  letter-spacing: .3em;
+  line-height: 1.2em;
+  display:block;
+  font-family:$font-1;
+  font-weight: 600;
+  font-size:24px;
+  margin-bottom:10px;
 }
 
 
@@ -316,57 +382,31 @@ input:focus, textarea:focus {
 
 input[type='button'], input[type='submit'], button, .button {
   border: none;
-  background: transparent;
   line-height: 1;
   cursor: pointer;
   padding: 1em 1.5em;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -o-transition: all .3s ease;
   transition: all .3s ease;
   display: block;
   margin-bottom: .75em;
   margin-bottom: .75rem;
 }
 
-.form-btn-1 {
-   color: $grey-1;
-  background: $color-2 !important;
-}
 
-.btn-1 {
+.form-btn-1, .btn-1 {
   color: $grey-1;
-  background: $color-2;
-}
-.btn-1:hover {
-  background: $color-2;
-}
-.btn-1:focus, .btn-1:active {
-  background: $color-2;
+  @include btnHover($color-2);
 }
 
 .btn-2 {
    color: $grey-1;
-  background: $color-4;
-}
-.btn-2:hover {
-  background: $color-4;
-}
-.btn-2:focus, .btn-2:active {
-  background: $color-4;
+  @include btnHover($color-4);
 }
 
 .btn-3 {
   font-size: .875em;
-  background: $grey-3;
+ @include btnHover($grey-4);
 }
-.btn-3:hover {
-  background: $grey-3;
-}
-.btn-3:focus, .btn-3:active {
-  background: $grey-3;
-}
+
 
 /* ==========================================================================
    =ADJECTIVES

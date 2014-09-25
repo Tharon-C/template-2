@@ -77,8 +77,9 @@ nav
     display: inline-block;
     margin-left: -4px; }
     .nav li a {
+      text-shadow: rgba(255, 255, 255, 0.4) 0 1px 0;
       display: block;
-      color: white;
+      color: #0386C9;
       padding: 18px 30px;
       text-transform: uppercase;
       font-size: 14px;
@@ -249,7 +250,7 @@ input[type='button'], input[type='submit'], button, .button {
   cursor: pointer;
   padding: 1em 1.5em;
   -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+          transition: all 0.3s ease;
   display: block;
   margin-bottom: 0.75em;
   margin-bottom: 0.75rem; }
@@ -260,10 +261,12 @@ input[type='button'], input[type='submit'], button, .button {
 
 .btn-1 {
   color: white;
-  background: #0386C9; }
+  background: #0386C9;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.8) 0 1px 0, inset rgba(0, 0, 0, 0.5) 0 1px 0;
+          box-shadow: rgba(255, 255, 255, 0.8) 0 1px 0, inset rgba(0, 0, 0, 0.5) 0 1px 0; }
 
 .btn-1:hover {
-  background: #0386C9; }
+  background: #0373ab; }
 
 .btn-1:focus, .btn-1:active {
   background: #0386C9; }
@@ -273,20 +276,18 @@ input[type='button'], input[type='submit'], button, .button {
   background: #F7A710; }
 
 .btn-2:hover {
-  background: #F7A710; }
+  background: #e19508; }
 
 .btn-2:focus, .btn-2:active {
   background: #F7A710; }
 
 .btn-3 {
   font-size: 0.875em;
-  background: #e5e5e5; }
-
-.btn-3:hover {
-  background: #e5e5e5; }
-
-.btn-3:focus, .btn-3:active {
-  background: #e5e5e5; }
+  background: red; }
+  .btn-3:hover {
+    background: #e00000; }
+  .btn-3:focus, .btn-3:active {
+    background: red; }
 
 /* ==========================================================================
    =ADJECTIVES

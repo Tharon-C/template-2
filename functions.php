@@ -142,9 +142,6 @@ function html5blank_header_scripts()
 
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
-        
-        wp_register_script('benefits-js', get_template_directory_uri() . '/js/benefits.js', array('jquery')); 
-        wp_enqueue_script('benefits-js'); // Enqueue it!
     
     }
 }
@@ -259,6 +256,16 @@ if (function_exists('register_sidebar'))
         'name' => __('Footer 1', 'Area for footer items, links, site map, logo etc'),
         'description' => __('Area for footer items, links, site map, logo etc', 'html5blank'),
         'id' => 'footer-1',
+        'before_widget' => '<div id="%1$s" class="%2$s footer-wdgt-1">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+     register_sidebar(array(
+        'name' => __('Analytics', 'Add Google Analyitics Here'),
+        'description' => __('Add Google Analyitics. Use a text widget with no title', 'html5blank'),
+        'id' => 'analyitics',
         'before_widget' => '<div id="%1$s" class="%2$s footer-wdgt-1">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',

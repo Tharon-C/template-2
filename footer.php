@@ -16,5 +16,7 @@
 		<!-- /wrapper -->
         
 		<?php wp_footer(); ?>
+		<?php dynamic_sidebar('analytics'); ?>
+	
 	</body>
 </html>
