@@ -44,6 +44,7 @@ article li {margin-bottom: 20px;}
 img {display:block;vertical-align:bottom;}
 
 /*helper classes*/
+.hide {display: none;}
 .flex {width:100%;}
 .inlineblk{display:inline-block;}
 .block {display: block;}
@@ -54,6 +55,7 @@ img {display:block;vertical-align:bottom;}
 .txt-r {text-align:right;}
 .txt-l {text-align:left;}
 .txt-wht {color:white;}
+.pad-0 {padding:0;}
 .pad-5px {padding:5px;}
 .pad-10px {padding:10px;}
 .pad-20px {padding:20px;}

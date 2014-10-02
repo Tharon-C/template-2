@@ -29,6 +29,9 @@ $grey-1: white;
 $grey-2: #F2F2F2;
 $grey-3: rgb(229, 229, 229);
 $grey-4:lightgrey;
+$grey-5:grey;
+$grey-6:darkgrey;
+$grey-7:black;
 $color-1:#00A9FF;
 $color-2:#0386C9;
 $color-3:rgb(229, 229, 229);
@@ -52,7 +55,6 @@ a {
 .page-wrapper, .p-wrap {
   position:relative;
   margin: auto;
-  max-width: 1200px;
   width: 100%;
   padding-right:20px;
   padding-left:20px;

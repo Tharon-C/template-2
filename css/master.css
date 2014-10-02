@@ -11,7 +11,6 @@ a {
 .page-wrapper, .p-wrap {
   position: relative;
   margin: auto;
-  max-width: 1200px;
   width: 100%;
   padding-right: 20px;
   padding-left: 20px; }
@@ -178,6 +177,27 @@ footer {
 .color-6 {
   background: #DDD5F8; }
 
+.txt-color-1 {
+  color: #00A9FF; }
+
+.txt-color-2 {
+  color: #0386C9; }
+
+.txt-color-3 {
+  color: #e5e5e5; }
+
+.txt-color-4 {
+  color: #F7A710; }
+
+.txt-color-5 {
+  color: #9370E9; }
+
+.txt-color-6 {
+  color: #DDD5F8; }
+
+.txt-wht {
+  color: white; }
+
 /* ===========================================================================
   typography
   =========================================================================== */
@@ -202,6 +222,15 @@ ul li, ol li {
   font-size: 42px;
   line-height: 1.2em;
   margin-bottom: 15px; }
+
+.sub-headline-1 {
+  letter-spacing: 0.3em;
+  line-height: 1.2em;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px; }
 
 .title-2 {
   display: block;
@@ -245,7 +274,6 @@ input:focus, textarea:focus {
 
 input[type='button'], input[type='submit'], button, .button {
   border: none;
-  background: transparent;
   line-height: 1;
   cursor: pointer;
   padding: 1em 1.5em;
@@ -255,39 +283,29 @@ input[type='button'], input[type='submit'], button, .button {
   margin-bottom: 0.75em;
   margin-bottom: 0.75rem; }
 
-.form-btn-1 {
+.form-btn-1, .btn-1 {
   color: white;
-  background: #0386C9 !important; }
-
-.btn-1 {
-  color: white;
-  background: #0386C9;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.8) 0 1px 0, inset rgba(0, 0, 0, 0.5) 0 1px 0;
-          box-shadow: rgba(255, 255, 255, 0.8) 0 1px 0, inset rgba(0, 0, 0, 0.5) 0 1px 0; }
-
-.btn-1:hover {
-  background: #0373ab; }
-
-.btn-1:focus, .btn-1:active {
-  background: #0386C9; }
+  background-color: #0386C9; }
+  .form-btn-1:hover, .btn-1:hover {
+    background-color: #026597; }
+  .form-btn-1:active, .form-btn-1:focus, .btn-1:active, .btn-1:focus {
+    background-color: #0386C9; }
 
 .btn-2 {
   color: white;
-  background: #F7A710; }
-
-.btn-2:hover {
-  background: #e19508; }
-
-.btn-2:focus, .btn-2:active {
-  background: #F7A710; }
+  background-color: #F7A710; }
+  .btn-2:hover {
+    background-color: #cd8807; }
+  .btn-2:active, .btn-2:focus {
+    background-color: #F7A710; }
 
 .btn-3 {
   font-size: 0.875em;
-  background: red; }
+  background-color: lightgrey; }
   .btn-3:hover {
-    background: #e00000; }
-  .btn-3:focus, .btn-3:active {
-    background: red; }
+    background-color: #b9b9b9; }
+  .btn-3:active, .btn-3:focus {
+    background-color: lightgrey; }
 
 /* ==========================================================================
    =ADJECTIVES
