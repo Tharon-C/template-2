@@ -21,6 +21,9 @@ a {
 /*======================================================== 
 header 
 ==========================================================*/
+header {
+  z-index: 6000; }
+
 /* business information across the top of header */
 .business-info {
   background: #0386C9;
@@ -45,8 +48,9 @@ logo
   float: left;
   width: 150px;
   display: block;
-  position: relative;
-  padding: 10px; }
+  position: absolute;
+  padding: 10px;
+  z-index: 6002; }
   .logo a:hover {
     color: black !important; }
 
@@ -56,38 +60,39 @@ logo
 /* ============================================================
 nav 
 ================================================================*/
-.nav {
+.nav .p-wrap {
   padding: 0;
   display: block;
   position: relative;
-  z-index: 10;
+  z-index: 6001;
+  height: 125px;
   background: #00A9FF;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.21);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.21); }
-  .nav ul {
+  .nav .p-wrap ul {
     margin: 0;
     padding: 0;
     float: right;
     position: absolute;
+    z-index: 6002;
     right: 0;
     bottom: 0; }
-  .nav li {
+  .nav .p-wrap li {
     position: relative;
     display: inline-block;
     margin-left: -4px; }
-    .nav li a {
-      text-shadow: rgba(255, 255, 255, 0.4) 0 1px 0;
+    .nav .p-wrap li a {
       display: block;
-      color: #0386C9;
+      color: white;
       padding: 18px 30px;
       text-transform: uppercase;
       font-size: 14px;
       position: relative; }
-  .nav a:hover {
-    background: #00A9FF; }
-  .nav ul.sub-menu {
+  .nav .p-wrap a:hover {
+    background: #e5e5e5; }
+  .nav .p-wrap ul.sub-menu {
     display: none; }
-    .nav ul.sub-menu a {
+    .nav .p-wrap ul.sub-menu a {
       padding: 10px;
       width: 300px; }
 

@@ -24,6 +24,9 @@
           }
 
 
+
+
+
 $font-1:'Open Sans', sans-serif;
 $grey-1: white;
 $grey-2: #F2F2F2;
@@ -69,33 +72,35 @@ a {
 /*======================================================== 
 header 
 ==========================================================*/
-
+header {
+  z-index: 6000;
+}
 
 /* business information across the top of header */
 
 .business-info {
   background:$color-2;
-    padding: 5px;
-      a {
+  padding: 5px;
+    a {
 
-        color: $color-2;
-    }
-    .top-wdgt-l {
-      color:$grey-1;
-      float: left;
-    }
-     .top-wdgt-r {
-      color:$grey-1;
-      float: right;
-    }
+      color: $color-2;
+  }
+  .top-wdgt-l {
+    color:$grey-1;
+    float: left;
+  }
+   .top-wdgt-r {
+    color:$grey-1;
+    float: right;
+  }
 
-      li {
-        display: inline-block;
-        margin-left: 20px;
-        color: white;
-    }
+  li {
+    display: inline-block;
+    margin-left: 20px;
+    color: white;
+  }
 }
-
+ 
 /* ==============================================================
 logo
 ================================================================= */
@@ -104,8 +109,9 @@ logo
   float:left;
   width:150px;
   display: block;
-  position: relative;
+  position: absolute;
   padding:10px;
+  z-index: 6002;
   a:hover {
     color: black !important;
   }
@@ -120,18 +126,20 @@ nav
 ================================================================*/
 
 
-.nav {
+.nav .p-wrap{
   padding:0;
-    display: block;
-    position: relative;
-    z-index: 10;
-    background: $color-1;
-    box-shadow:$shadow-1;
+  display: block;
+  position: relative;
+  z-index: 6001;
+  height: 125px;
+  background: $color-1;
+  box-shadow:$shadow-1;
    ul {
       margin: 0;
       padding: 0;
       float: right;
       position:absolute;
+      z-index: 6002;
       right:0;
       bottom:0;
      }
@@ -140,9 +148,8 @@ nav
       display:inline-block;
       margin-left: -4px;
       a {
-         @include letterpress(.4);
         display:block;
-        color: $color-2;
+        color: $grey-1;
         padding: 18px 30px;
         text-transform: uppercase;
         font-size: 14px;
@@ -150,7 +157,7 @@ nav
       }
     }
     a:hover {
-       background: $color-1;
+       background: $color-3;
     }
     ul.sub-menu {
     display:none;

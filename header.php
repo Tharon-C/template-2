@@ -50,7 +50,7 @@
 
 				<!-- nav -->
 				<nav class="nav clear" role="navigation">
-                    <div class="page-wrapper clear">    
+                    <div class="p-wrap clear">    
                         <?php  add_custom_nav_menu('menu-1'); ?>
              		</div>
 				</nav>
