@@ -29,21 +29,16 @@
 
 			<!-- header -->
 			<header class="header clear" role="banner">
-                <div class="business-info section-top clear">
-                    
+				
+                <div class="business-info section-top clear">                   
                     <div class="page-wrapper clear">
-                    <?php dynamic_sidebar('top-l'); ?>
-                    <?php dynamic_sidebar('top-r'); ?>
-					</div>
-                    
+	                    <?php dynamic_sidebar('top-l'); ?>
+	                    <?php dynamic_sidebar('top-r'); ?>
+					</div>                    
                 </div>
 
-
-					<!-- nav -->
-					<nav class="nav clear" role="navigation">
-    
-                        <div class="page-wrapper clear">    
-                        <!-- logo -->
+            	<div class="p-wrap clear">
+                	<!-- logo -->
 				    <div class="logo">
 						<a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
@@ -51,10 +46,14 @@
 						</a>
                     </div>
 					<!-- /logo -->
-                           
-                            <?php  add_custom_nav_menu('menu-1'); ?>
-                 </div>
-					</nav>
-					<!-- /nav -->
+				</div>
+
+				<!-- nav -->
+				<nav class="nav clear" role="navigation">
+                    <div class="page-wrapper clear">    
+                        <?php  add_custom_nav_menu('menu-1'); ?>
+             		</div>
+				</nav>
+				<!-- /nav -->
       		</header>
 			<!-- /header -->
