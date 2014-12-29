@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-	<main role="main">
+	<main class="content" role="main">
 		<!-- section -->
-		<section>
+		<section class="p-wrap clear">
 
 		<?php if (have_posts()): the_post(); ?>
 
-			<h1><?php _e( 'Author Archives for ', 'html5blank' ); echo get_the_author(); ?></h1>
+			<h1 class="title-1"><?php _e( 'Author Archives for ', 'html5blank' ); echo get_the_author(); ?></h1>
 
 		<?php if ( get_the_author_meta('description')) : ?>
 
@@ -21,7 +21,7 @@
 		<?php rewind_posts(); while (have_posts()) : the_post(); ?>
 
 			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<article class="p-wrap clear" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 				<!-- post thumbnail -->
 				<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
@@ -32,7 +32,7 @@
 				<!-- /post thumbnail -->
 
 				<!-- post title -->
-				<h2>
+				<h2 class="title-2">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 				</h2>
 				<!-- /Post title -->

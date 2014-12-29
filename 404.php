@@ -2,14 +2,14 @@
 
 	<main role="main">
 		<!-- section -->
-		<section>
+		<section class="content">
 
 			<!-- article -->
-			<article class="page-wrapper p-c" id="post-404">
+			<article class="p-wrap pad-tb-50px clear" id="post-404">
 
-				<h1>Oops! We don't know what page You're Looking for</h1>
-				<h2>
-					Would you like to<a href="<?php echo home_url(); ?>">return home?</a>
+				<h1 class="title-1">Oops! We don't know what page You're Looking for</h1>
+				<h2 class="title-2">
+					Would you like to <a href="<?php echo home_url(); ?>">return home?</a>
 				</h2>
 
 			</article>
