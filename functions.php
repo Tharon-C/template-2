@@ -19,11 +19,11 @@
 remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
 
+add_shortcode('img_path', 'image_path_shortcode');
+add_shortcode('page_path', 'page_path_shortcode');
+
 // Adds image path short code. syntax: [img_path file="..."]
-
-add_shortcode('img_path', 'get_relative_image_path_shortcode');
-
-function get_relative_image_path_shortcode($args) {
+function image_path_shortcode($args) {
 	$upload_dir = wp_upload_dir();
 	$upload_dir = $upload_dir['url'];
 	return $upload_dir.'/'.$args['file'];
@@ -31,23 +31,23 @@ function get_relative_image_path_shortcode($args) {
 
 //Adds page path shortcode. syntax: [page_path id="..."]
 
-add_shortcode('page_path', function($args) {
+function page_path($args) {
     $id = $args['id'];
     return get_permalink($id);
-});
+};
 
 
 //CDN fonts 
 function load_fonts() {
-            wp_register_style('open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700');
-            wp_enqueue_style( 'open-sans');
-      
+    wp_register_style('open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700');
+    wp_enqueue_style( 'open-sans');
+
     wp_register_style('quicksand', 'http://fonts.googleapis.com/css?family=Quicksand:400,700');
-            wp_enqueue_style( 'quicksand');
-    
-     wp_register_style('font-awsome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
-            wp_enqueue_style( 'font-awsome');
-        }
+    wp_enqueue_style( 'quicksand');
+
+    wp_register_style('font-awsome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+    wp_enqueue_style( 'font-awsome');
+}
 
  
 
@@ -263,9 +263,9 @@ if (function_exists('register_sidebar'))
     ));
 
      register_sidebar(array(
-        'name' => __('Analytics', 'Add Google Analyitics Here'),
-        'description' => __('Add Google Analyitics. Use a text widget with no title', 'html5blank'),
-        'id' => 'analyitics',
+        'name' => __('Scripts', 'Add scripts to footer. Like Analytics.'),
+        'description' => __('Add scripts to footer. Like Analytics. Use a text widget with no title', 'html5blank'),
+        'id' => 'scripts',
         'before_widget' => '<div id="%1$s" class="%2$s footer-wdgt-1">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
@@ -377,7 +377,6 @@ function html5blankcomments($comment, $args, $depth)
 {
 	$GLOBALS['comment'] = $comment;
 	extract($args, EXTR_SKIP);
-
 	if ( 'div' == $args['style'] ) {
 		$tag = 'div';
 		$add_below = 'comment';
@@ -405,9 +404,7 @@ function html5blankcomments($comment, $args, $depth)
 			printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?></a><?php edit_comment_link(__('(Edit)'),'  ','' );
 		?>
 	</div>
-
 	<?php comment_text() ?>
-
 	<div class="reply">
 	<?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
 	</div>
@@ -477,22 +474,17 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 /*------------------------------------*\
 	Custom Post Types
 \*------------------------------------*/
-
-
 /*------------------------------------*\
 	ShortCode Functions
 \*------------------------------------*/
-
 // Shortcode Demo with Nested Capability
 function html5_shortcode_demo($atts, $content = null)
 {
     return '<div class="shortcode-demo">' . do_shortcode($content) . '</div>'; // do_shortcode allows for nested Shortcodes
 }
-
 // Shortcode Demo with simple <h2> tag
 function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
 {
     return '<h2>' . $content . '</h2>';
 }
-
 ?>

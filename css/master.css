@@ -1,8 +1,8 @@
 a {
-  color: #00A9FF; }
+  color: #00a9ff; }
 
 body {
-  background: #0386C9; }
+  background: #0386c9; }
 
 /* wrapper */
 .wrapper, .wrap {
@@ -26,22 +26,22 @@ body {
 header 
 ==========================================================*/
 .header {
-  background: #00A9FF;
+  background: #00a9ff;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.21);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.21);
   z-index: 6000; }
 
 /* business information across the top of header */
 .business-info {
-  background: #0386C9;
+  background: #0386c9;
   padding: 5px; }
   .business-info a {
-    color: #0386C9; }
+    color: #0386c9; }
   .business-info .top-wdgt-l {
-    color: white;
+    color: whitesmoke;
     float: left; }
   .business-info .top-wdgt-r {
-    color: white;
+    color: whitesmoke;
     float: right; }
   .business-info li {
     display: inline-block;
@@ -88,13 +88,13 @@ nav
     margin-left: -4px; }
     .nav .p-wrap li a {
       display: block;
-      color: white;
+      color: whitesmoke;
       padding: 18px 30px;
       text-transform: uppercase;
       font-size: 14px;
       position: relative; }
   .nav .p-wrap a:hover {
-    background: #0386C9; }
+    background: #0386c9; }
   .nav .p-wrap ul.sub-menu {
     display: none; }
     .nav .p-wrap ul.sub-menu a {
@@ -127,9 +127,9 @@ banner
 footer items
 =================================================================== */
 .footer-items {
-  background: #F2F2F2;
+  background: #e6e6e6;
   padding: 25px 0;
-  border-top: solid 1px #e5e5e5;
+  border-top: solid 1px #c8c8c8;
   color: #525252; }
   .footer-items ul {
     padding-left: 0; }
@@ -155,58 +155,59 @@ footer items
 footer 
 ================================================================*/
 footer {
-  background: #00A9FF;
+  background: #00a9ff;
   text-align: center;
-  color: white;
+  color: whitesmoke;
   padding: 10px;
   font-size: 12px; }
   footer a {
-    color: white; }
+    color: whitesmoke; }
 
 /* ==========================================================================
    =COLOR
    ========================================================================== */
 .swatch {
-  height: 5em; }
+  height: 5em;
+  margin: 10px; }
 
 .color-1 {
-  background: #00A9FF; }
+  background: #00a9ff; }
 
 .color-2 {
-  background: #0386C9; }
+  background: #0386c9; }
 
 .color-3 {
-  background: #F7A710; }
+  background: #f7a710; }
 
 .color-4 {
-  background: #9370E9; }
+  background: #9370e9; }
 
 .color-5 {
   background: #e5e5e5; }
 
 .color-6 {
-  background: #DDD5F8; }
+  background: #ddd5f8; }
 
 .txt-color-1 {
-  color: #00A9FF; }
+  color: #00a9ff; }
 
 .txt-color-2 {
-  color: #0386C9; }
+  color: #0386c9; }
 
 .txt-color-3 {
-  color: #F7A710; }
+  color: #f7a710; }
 
 .txt-color-4 {
-  color: #9370E9; }
+  color: #9370e9; }
 
 .txt-color-5 {
   color: #e5e5e5; }
 
 .txt-color-6 {
-  color: #DDD5F8; }
+  color: #ddd5f8; }
 
 .txt-wht {
-  color: white; }
+  color: whitesmoke; }
 
 /* ===========================================================================
   typography
@@ -216,6 +217,15 @@ p {
 
 ul li, ol li {
   line-height: 130%; }
+
+.pad-sm {
+  padding: 10px; }
+
+.pad-m {
+  padding: 25px; }
+
+.pad-l {
+  padding: 50px; }
 
 .headline-1 {
   display: block;
@@ -270,19 +280,20 @@ ul li, ol li {
   display: block;
   padding: 0.5em;
   margin-bottom: 0.75em;
-  border: 0.1em solid lightgrey;
+  border: 0.1em solid #aaaaaa;
   width: 100%;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  resize: none; }
+          transition: all 0.3s ease;
+  resize: none;
+  font-size: 16px; }
 
 .input:focus, textarea:focus {
   outline: none;
-  border-color: #00A9FF; }
+  border-color: #00a9ff; }
 
-input[type='button'], input[type='submit'], button, .button {
+.input[type='button'], .input[type='submit'], .button, .button {
   border: none;
   line-height: 1;
   cursor: pointer;
@@ -293,62 +304,46 @@ input[type='button'], input[type='submit'], button, .button {
   margin-bottom: 0.75rem; }
 
 .button {
-  display: inline-block; }
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px; }
 
 .form-btn-1, .btn-1 {
-  color: white;
-  background-color: #0386C9; }
+  color: whitesmoke;
+  background-color: #0386c9; }
   .form-btn-1:hover, .btn-1:hover {
     background-color: #026597; }
   .form-btn-1:active, .form-btn-1:focus, .btn-1:active, .btn-1:focus {
-    background-color: #0386C9; }
+    background-color: #0386c9; }
   .form-btn-1:hover, .btn-1:hover {
-    color: white; }
+    color: whitesmoke; }
 
 .btn-2 {
-  color: white;
-  background-color: #F7A710; }
+  color: whitesmoke;
+  background-color: #f7a710; }
   .btn-2:hover {
     background-color: #cd8807; }
   .btn-2:active, .btn-2:focus {
-    background-color: #F7A710; }
+    background-color: #f7a710; }
   .btn-2:hover {
-    color: white; }
+    color: whitesmoke; }
 
 .btn-3 {
-  color: black !important;
+  color: #323232 !important;
   font-size: 14px;
-  background-color: lightgrey; }
+  background-color: #aaaaaa; }
   .btn-3:hover {
-    background-color: #b9b9b9; }
+    background-color: #909090; }
   .btn-3:active, .btn-3:focus {
-    background-color: lightgrey; }
+    background-color: #aaaaaa; }
   .btn-3:hover {
-    color: white; }
-
-/* ==========================================================================
-   =ADJECTIVES
-   ========================================================================== */
-.ws-adjectives div {
-  font-size: 1.5em;
-  padding-bottom: 0.25em; }
-
-/* ==========================================================================
-   =COLOPHON
-   ========================================================================== */
-.colophon {
-  clear: both;
-  text-align: center;
-  font-size: 0.875em;
-  padding: 1.714em 0;
-  border-top: thin solid #eee;
-  margin-top: 1.714em; }
+    color: whitesmoke; }
 
 /* =========================================================================
    =objects
    ========================================================================= */
 .img-1 {
   padding: 10px;
-  background: #e5e5e5;
+  background: #c8c8c8;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.21);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.21); }

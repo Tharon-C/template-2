@@ -1,49 +1,47 @@
 @function black($opacity){
-    @return rgba(0,0,0,$opacity)
+  @return rgba(0,0,0,$opacity)
 }
 @function white($opacity){
-    @return rgba(255,255,255,$opacity)
+  @return rgba(255,255,255,$opacity)
 }
 
 @mixin letterpress($opacity){
-    text-shadow:white($opacity) 0 1px 0;
+  text-shadow:white($opacity) 0 1px 0;
 }
 
 @mixin box-emboss($opacity, $opacity2){
-    box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
+  box-shadow:white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
 }
 
 @mixin btnHover($baseColor) {
-    background-color: $baseColor;
-    &:hover {
-          background-color: darken($baseColor, 10);
-            }
-    &:active, &:focus {
-      background-color:$baseColor;
-    }
+  background-color: $baseColor;
+  &:hover {
+        background-color: darken($baseColor, 10);
           }
-
-
-
-
+  &:active, &:focus {
+    background-color:$baseColor;
+  }
+}
 
 $font-1:'Open Sans', sans-serif;
-$grey-1: white;
-$grey-2: #F2F2F2;
-$grey-3: rgb(229, 229, 229);
-$grey-4:lightgrey;
-$grey-5:grey;
-$grey-6:darkgrey;
-$grey-7:black;
-$color-1:#00A9FF;
-$color-2:#0386C9;
-$color-3:#F7A710;
-$color-4:#9370E9;
-$color-5:rgb(229, 229, 229);
-$color-6:#DDD5F8;
+$grey-1: rgba(245,245,245,1);
+$grey-2: rgba(230,230,230,1);
+$grey-3: rgba(200,200,200,1);
+$grey-4: rgba(170,170,170,1);
+$grey-5: rgba(140,140,140,1);
+$grey-6: rgba(100,100,100,1);
+$grey-7: rgba(50,50,50,1);
+$grey-8:black;
+$color-1:rgba(0,169,255,1);
+$color-2:rgba(3,134,201,1);
+$color-3:rgba(247,167,16,1);
+$color-4:rgba(147,112,233,1);
+$color-5:rgba(229, 229, 229,1);
+$color-6:rgba(221,213,248,1);
 $pattern-1:url('../img/pattern.img');
 $gradient-1:linear-gradient(to bottom, #1e5799 0%,#7db9e8 100%);
 $shadow-1:0 1px 2px rgba(0, 0, 0, 0.21);
+$shadow-in-1:inset 0 1px 2px rgba(0, 0, 0, 0.21);
 
 a {
   color:$color-1;
@@ -52,6 +50,7 @@ a {
 body {
   background:$color-2;
 }
+
 /* wrapper */
 .wrapper, .wrap {
   width: 100%;
@@ -72,7 +71,6 @@ body {
   background:white;
   padding:50px 0;
 }
-
 /*======================================================== 
 header 
 ==========================================================*/
@@ -88,7 +86,6 @@ header
   background:$color-2;
   padding: 5px;
     a {
-
       color: $color-2;
   }
   .top-wdgt-l {
@@ -255,6 +252,7 @@ footer {
    ========================================================================== */
 .swatch {
   height: 5em;
+  margin: 10px;
 }
 
 .color-1 {
@@ -317,6 +315,17 @@ p {margin:0 0 20px;}
 
 ul li, ol li {line-height: 130%;}
 
+.pad-sm {
+  padding:10px;
+}
+
+.pad-m {
+  padding:25px;
+}
+
+.pad-l {
+  padding:50px;
+}
 
 .headline-1 {
   display:block;
@@ -379,15 +388,10 @@ ul li, ol li {line-height: 130%;}
   margin-bottom: .75em;
   border: .1em solid $grey-4;
   width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -o-transition: all .3s ease;
   transition: all .3s ease;
   resize: none;
+  font-size:16px;
 }
 
 .input:focus, textarea:focus {
@@ -395,7 +399,7 @@ ul li, ol li {line-height: 130%;}
   border-color: $color-1;
 }
 
-input[type='button'], input[type='submit'], button, .button {
+.input[type='button'], .input[type='submit'], .button, .button {
   border: none;
   line-height: 1;
   cursor: pointer;
@@ -407,6 +411,8 @@ input[type='button'], input[type='submit'], button, .button {
 
 .button {
   display: inline-block;
+  margin-right:10px;
+  margin-left:10px;
 }
 
 .form-btn-1, .btn-1 {
@@ -434,27 +440,6 @@ input[type='button'], input[type='submit'], button, .button {
   }
 }
 
-
-/* ==========================================================================
-   =ADJECTIVES
-   ========================================================================== */
-.ws-adjectives div {
-  font-size: 1.5em;
-  padding-bottom: .25em;
-}
-
-/* ==========================================================================
-   =COLOPHON
-   ========================================================================== */
-.colophon {
-  clear: both;
-  text-align: center;
-  font-size: .875em;
-  padding: 1.714em 0;
-  border-top: thin solid #eee;
-  margin-top: 1.714em;
-}
-
 /* =========================================================================
    =objects
    ========================================================================= */
@@ -463,6 +448,3 @@ input[type='button'], input[type='submit'], button, .button {
   background:$grey-3;
   box-shadow:$shadow-1;
 }
-
-
-

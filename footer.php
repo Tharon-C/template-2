@@ -1,11 +1,9 @@
 			
             <div class="footer-items footer-1">
-                <div class="page-wrapper clear">
-                   
+                <div class="page-wrapper clear">               
 					<?php dynamic_sidebar('footer-1'); ?>
 				</div>
 			</div>
-
     <footer class="footer-2">      
           <p class="copyright">
 					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
@@ -14,9 +12,7 @@
 			</footer>	
 		</div>
 		<!-- /wrapper -->
-        
 		<?php wp_footer(); ?>
-		<?php dynamic_sidebar('analytics'); ?>
-	
+		<?php dynamic_sidebar('scripts'); ?>
 	</body>
 </html>

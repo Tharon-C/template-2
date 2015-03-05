@@ -1,7 +1,3 @@
-html {
-border-radius:3px;
-}
-
 /*
   Theme Name: Float Dreams 
   Theme URI: 
@@ -9,43 +5,31 @@ border-radius:3px;
   Author: Tharon Carlson
   Author URI: http://taglinegroup.com
   Tags: Starter, HTML5, CSS3
-
   License: All Rights Reserved
 */
-
-/* global box-sizing */
-
 *,
 *:after,
 *:before {-moz-box-sizing:border-box;box-sizing:border-box;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;text-rendering:optimizeLegibility;}
 html {font-size:62.5%;}
 body {font:400 14px 'Open Sans', 'Helvetica', sans-serif,'Arial';position:relative;}
-
 /* clear */
 .stack:before, .stack:after, 
 .clear:before, .clear:after {content:' ';display:table;}
 .stack:before, .clear:after {clear:both;}
 .stack, .clear {*zoom:1;}
-
 a {text-decoration:none;}
 a:hover {color:black;}
 a:focus {outline:0;}
 a:hover,a:active, input:hover {outline:0;transition: 420ms;}
-
-input:focus {outline:0;border:1px solid #04A4CC;}
+input:focus {outline:0;border:1px solid #E0E0E0;}
 button {background:none;border:none;}
-.input {width: 100%;padding: 5px;margin:5px 0;border: solid 1px #E0E0E0;    background: rgb(255, 255, 255);font-size: 16px;}
-input {padding: 5px;border: solid 2px #E0E0E0; font-size: 16px;}
-textarea {overflow: auto;vertical-align: top;width: 100%;padding: 10px;margin: 5px 0;border: solid 1px #E0E0E0;height: 84px;      background: rgb(255, 255, 255);}
-
+.input {width: 100%;padding: 5px;margin-bottom:10px;border: solid 1px #E0E0E0;    background: rgb(255, 255, 255);font-size: 16px;}
+input {padding: 5px; font-size: 16px;}
+textarea {overflow: auto;vertical-align: top;width: 100%;padding: 10px; margin-bottom: 20px;border: solid 1px #E0E0E0;height: 100px;background: rgb(255, 255, 255);}
 .fa {padding-right:5px}
-
 h1,h2,h3,h4,h5 {margin: 0;font-weight:400;font-size:1em;}
-
 article li {margin-bottom: 20px;}
-
 img {display:block;vertical-align:bottom;}
-
 /*helper classes*/
 .hide {display: none;}
 .flex {width:100%;}
@@ -95,6 +79,13 @@ img {display:block;vertical-align:bottom;}
 .pad-s-30px {padding-right:30px;padding-left:30px;}
 .pad-s-40px {padding-right:40px;padding-left:40px;}
 .pad-s-50px {padding-right:50px;padding-left:50px;}
+.pad-s-60px {padding-right:60px;padding-left:60px;}
+.pad-s-70px {padding-right:70px;padding-left:70px;}
+.pad-s-80px {padding-right:80px;padding-left:80px;}
+.pad-s-90px {padding-right:90px;padding-left:90px;}
+.pad-s-100px {padding-right:100px;padding-left:100px;}
+.pad-s-150px {padding-right:150px;padding-left:150px;}
+.pad-s-200px {padding-right:200px;padding-left:200px;}
 .pad-t-5px {padding-top:5px;}
 .pad-t-10px {padding-top:10px;}
 .pad-t-20px {padding-top:20px;}
@@ -146,55 +137,9 @@ img {display:block;vertical-align:bottom;}
 .marg-tb-50px {margin-top:50px;margin-bottom:50px;}
 .marg-tb-75px {margin-top:75px;margin-bottom:75px;}
 .marg-tb-100px {margin-top:100px;margin-bottom:100px;}
-
-
 /* ==========================================================================
    =GRID
    ========================================================================== */
-
-.stack {
-  /* A set of grid items must be in a stack.
-  Use sympl-stack when you want a margin at the bottom */
-  clear: both;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
- }
-
-.stack-sympl {
-  padding-bottom: 1.5em;
-}
-
-.stack-clean {
-  padding-bottom: 0;
-  padding-top: 1.5em;
-}
-
-.stack-clean .sympl {
-  padding-bottom: 1.5em;
-}
-
-.sympl {
-  /* Each grid item should have the sympl class, along with at least one class for size */
-  float: left;
-  padding: 0 0 0 1.5em;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.stack:before,
-.stack:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.stack:after {
-  clear: both;
-}
-
 .col-1-2, .col-2-4, .col-3-6, .col-4-8, .col-5-10 {width: 50%;}
 .col-1-3, .col-3-9 {width: 33.333333%;}
 .col-2-3, .col-4-6, .col-6-9 {width: 66.666666%;}
@@ -240,10 +185,6 @@ img {display:block;vertical-align:bottom;}
 .col-9-12 {width:74.97%;}
 .col-10-12 {width:83.33%;}
 .col-11-12 {width:91.63%;}
-
-
-
-
 .full {width:100%;}
 /* L stands for large. L styles get triggered at 60em, that is, 960px */
 @media (max-width: 60em) {
@@ -261,12 +202,12 @@ img {display:block;vertical-align:bottom;}
   .l-4-5 {width: 80%;}
   .l-1-6 {width: 16.666666%;}
   .l-5-6 {width: 83.333333%;}
-  .hide-l {display: none;visibility: hidden;}
-  .show-l {display: block;visibility: visible;}
+  .l-hide {display: none;visibility: hidden;}
+  .l-show {display: block;visibility: visible;}
 }
 @media (max-width: 60em) and (min-width: 45em) {
   .hide-on-l {display: none;visibility: hidden;}
-.show-on-l {display: block;visibility: visible;}
+  .show-on-l {display: block;visibility: visible;}
 }
 /* M stands for medium. M styles get triggered at 45em, that is, 720px */
 @media (max-width: 45em) {
@@ -278,8 +219,8 @@ img {display:block;vertical-align:bottom;}
   .m-2-3 {width: 66.666666%;}
   .m-1-4 {width: 25%;}
   .m-3-4 {width: 75%;}
-  .hide-m {display: none;visibility: hidden;}
-  .show-m {display: block;visibility: visible;}
+  .m-hide {display: none;visibility: hidden;}
+  .m-show {display: block;visibility: visible;}
   .m-pad-0 {padding:0;}
   .m-pad-5px {padding:5px;}
   .m-pad-10px {padding:10px;}
@@ -348,10 +289,6 @@ img {display:block;vertical-align:bottom;}
   .s-1-2, .s-2-4 {width: 50%;}
   .s-1-3 {width: 33.333333%;}
   .s-2-3 {width: 66.666666%;}
-  .hide-on-s {display: none;visibility: hidden;}
-  .show-on-s {display: block;visibility: visible;}
+  .s-hide {display: none;visibility: hidden;}
+  .s-show {display: block;visibility: visible;}
 }
-
-
-/*add styles below for quick hack or debug*/
-
