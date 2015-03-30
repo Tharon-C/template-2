@@ -67,7 +67,7 @@ body {
   padding-left:20px;
 }
 
-.content {
+.post, .content {
   background:white;
   padding:50px 0;
 }
@@ -129,13 +129,14 @@ nav
 ================================================================*/
 
 
-.nav .p-wrap{
+.nav .p-wrap {
   padding:0;
   display: block;
   position: relative;
   z-index: 6001;
   height: 125px;
- 
+}
+.nav {
    ul {
       display:inline-block;
       margin: 0;
@@ -162,27 +163,60 @@ nav
     a:hover {
        background: $color-2;
     }
-    ul.sub-menu {
-    display:none;
-    a{
-      padding:10px;
-      width:300px
+    .sub-menu {
+        width:150px;
+        display: block;
+        transition: all .2s ease;
+        visibility: hidden;
+        opacity:0;
+        z-index:-1;
+        position:absolute;
+        top:30px;
+        margin:0px 0px 0px -16px;
+        padding:0px;
+      li {
+        text-align: center;
+        width:100%;
+        background:white;
+        display: block;
+        position:relative;
+        box-shadow:$shadow-1;
+        border-bottom:solid 1px $grey-3;
+        border-right:solid 1px $grey-3;
+        border-left:solid 1px $grey-3;
+        a {
+          padding:10px 10px;
+          color:$grey-8;
+        }
+        &:after {
+          display: none;
+          border:none;
+        }
+        a:hover {
+          background:$grey-2;
+          text-decoration: none;
+          color:$grey-8;
+        }
       }
     }
   }
 
-.nav ul li:hover > ul.sub-menu {
-display:block;
-z-index:99;
-position:absolute;
-top:30px;
-margin:0px 0px 0px -16px;
-padding:0px;
-border:1px #808080 solid;
-background-color:#fff;
-width:300px;
+
+.nav ul li:hover > .sub-menu {
+  transition: all .1s ease;
+  visibility: visible;
+  display:inline-block;
+  opacity:1;
+  top:54px; 
 }
 
+
+.sub-menu li .sub-menu {
+  li {
+    right: -150px;
+    top: -50px;
+  }
+}
 .current_page_item a {
 color: black;
 }
@@ -251,6 +285,7 @@ footer {
    =COLOR
    ========================================================================== */
 .swatch {
+  box-sizing:border-box;
   height: 5em;
   margin: 10px;
 }
@@ -277,6 +312,38 @@ footer {
 
 .color-6 {
   background: $color-6;
+}
+
+.grey-1 {
+  background: $grey-1;
+}
+
+.grey-2 {
+  background: $grey-2;
+}
+
+.grey-3 {
+  background: $grey-3;
+}
+
+.grey-4 {
+  background: $grey-4;
+}
+
+.grey-5 {
+  background: $grey-5;
+}
+
+.grey-6 {
+  background: $grey-6;
+}
+
+.grey-7 {
+  background: $grey-7;
+}
+
+.grey-8 {
+  background: $grey-8;
 }
 
 .txt-color-1 {
