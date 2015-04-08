@@ -1,6 +1,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
@@ -29,31 +30,27 @@
 
 			<!-- header -->
 			<header class="header clear" role="banner">
-				
-                <div class="business-info section-top clear">                   
-                    <div class="page-wrapper clear">
-	                    <?php dynamic_sidebar('top-l'); ?>
-	                    <?php dynamic_sidebar('top-r'); ?>
-					</div>                    
-                </div>
-
             	<div class="p-wrap clear">
                 	<!-- logo -->
 				    <div class="logo">
 						<a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/float-dreams_logo.svg" alt="Logo" class="logo-img">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
 						</a>
                     </div>
 					<!-- /logo -->
+					<span id="nav-toggle"><i class="fa fa-bars"></i></span>
 				</div>
 
 				<!-- nav -->
-				<nav class="nav clear" role="navigation">
+				<nav class="mble-nav clear" role="navigation">
                     <div class="p-wrap clear">    
-                        <?php  add_custom_nav_menu('menu-1'); ?>
+                        <?php  add_custom_nav_menu('mobile-1'); ?>
              		</div>
 				</nav>
 				<!-- /nav -->
       		</header>
 			<!-- /header -->
+			<div class="mble-btns">
+				<?php dynamic_sidebar('mobile-1'); ?>
+			</div>

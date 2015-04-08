@@ -1,11 +1,15 @@
 (function ($, root, undefined) {
 	
 	$(function () {
-		
-		'use strict';
-		
-		// DOM ready, take it away
-		
+	'use strict';
+
+	   	var target = $('.mble-nav');
+
+		target.hide();
+		$('#nav-toggle').click( function(){
+			self = $(this);
+			$(target).slideToggle(300);
+		})
 	});
 	
 })(jQuery, this);

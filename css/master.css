@@ -2,7 +2,7 @@ a {
   color: #00a9ff; }
 
 body {
-  background: #0386c9; }
+  background: white; }
 
 /* wrapper */
 .wrapper, .wrap {
@@ -20,83 +20,75 @@ body {
 
 .post, .content {
   background: white;
-  padding: 50px 0; }
+  padding: 50px 20px; }
 
 /*======================================================== 
 header 
 ==========================================================*/
 .header {
-  background: #00a9ff;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.21);
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.21);
+  background: white;
+  border-bottom: solid 1px #aaaaaa;
   z-index: 6000; }
 
-/* business information across the top of header */
-.business-info {
-  background: #0386c9;
-  padding: 5px; }
-  .business-info a {
-    color: #0386c9; }
-  .business-info .top-wdgt-l {
-    color: whitesmoke;
-    float: left; }
-  .business-info .top-wdgt-r {
-    color: whitesmoke;
-    float: right; }
-  .business-info li {
-    display: inline-block;
-    margin-left: 20px;
-    color: white; }
+.mble-btns {
+  padding: 20px; }
 
 /* ==============================================================
 logo
 ================================================================= */
 .logo {
   float: left;
-  width: 150px;
+  width: 70%;
   display: block;
-  position: absolute;
-  padding: 10px;
+  position: relative;
+  padding: 10px 0;
   z-index: 6002; }
   .logo a:hover {
     color: black !important; }
 
 .logo-img {
+  width: 100%;
   margin: 0; }
 
 /* ============================================================
 nav 
 ================================================================*/
-.nav .p-wrap {
+#nav-toggle {
+  color: #323232;
+  float: right;
+  border: solid 1px #c8c8c8;
+  padding: 5px 5px 5px 10px;
+  font-size: 22px;
+  margin-top: 10px; }
+
+.mble-nav .p-wrap {
   padding: 0;
   display: block;
   position: relative;
-  z-index: 6001;
-  height: 125px; }
+  z-index: 6001; }
 
-.nav ul {
-  display: inline-block;
+.mble-nav ul {
+  display: block;
   margin: 0;
   padding: 0;
-  float: right;
-  position: absolute;
-  z-index: 6002;
-  right: 0;
-  bottom: 0; }
-.nav li {
   position: relative;
-  display: inline-block;
-  margin-left: -4px; }
-  .nav li a {
+  z-index: 6002; }
+.mble-nav li {
+  position: relative;
+  display: block;
+  border-bottom: solid 1px #aaaaaa; }
+  .mble-nav li:last-child {
+    border: none; }
+  .mble-nav li a {
     display: block;
-    color: whitesmoke;
+    color: black;
     padding: 18px 30px;
     text-transform: uppercase;
     font-size: 14px;
     position: relative; }
-.nav a:hover {
-  background: #0386c9; }
-.nav .sub-menu {
+.mble-nav a:hover {
+  background: #c8c8c8; }
+.mble-nav .sub-menu {
   width: 150px;
   display: block;
   -webkit-transition: all 0.2s ease;
@@ -108,7 +100,7 @@ nav
   top: 30px;
   margin: 0px 0px 0px -16px;
   padding: 0px; }
-  .nav .sub-menu li {
+  .mble-nav .sub-menu li {
     text-align: center;
     width: 100%;
     background: white;
@@ -119,13 +111,13 @@ nav
     border-bottom: solid 1px #c8c8c8;
     border-right: solid 1px #c8c8c8;
     border-left: solid 1px #c8c8c8; }
-    .nav .sub-menu li a {
+    .mble-nav .sub-menu li a {
       padding: 10px 10px;
       color: black; }
-    .nav .sub-menu li:after {
+    .mble-nav .sub-menu li:after {
       display: none;
       border: none; }
-    .nav .sub-menu li a:hover {
+    .mble-nav .sub-menu li a:hover {
       background: #e6e6e6;
       text-decoration: none;
       color: black; }
@@ -185,7 +177,7 @@ footer items
 footer 
 ================================================================*/
 footer {
-  background: #00a9ff;
+  background: #646464;
   text-align: center;
   color: whitesmoke;
   padding: 10px;
@@ -353,18 +345,14 @@ ul li, ol li {
   border: none;
   line-height: 1;
   cursor: pointer;
-  padding: 1em 1.5em;
   -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease;
-  margin-bottom: 0.75em;
-  margin-bottom: 0.75rem; }
+          transition: all 0.3s ease; }
 
 .button {
-  display: inline-block;
-  margin-right: 10px;
-  margin-left: 10px; }
+  display: inline-block; }
 
 .form-btn-1, .btn-1 {
+  padding: 10px 20px;
   color: whitesmoke;
   background-color: #0386c9; }
   .form-btn-1:hover, .btn-1:hover {
@@ -375,6 +363,7 @@ ul li, ol li {
     color: whitesmoke; }
 
 .btn-2 {
+  padding: 10px 20px;
   color: whitesmoke;
   background-color: #f7a710; }
   .btn-2:hover {
@@ -385,6 +374,7 @@ ul li, ol li {
     color: whitesmoke; }
 
 .btn-3 {
+  padding: 10px 20px;
   color: #323232 !important;
   font-size: 14px;
   background-color: #aaaaaa; }

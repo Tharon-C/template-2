@@ -171,7 +171,8 @@ function register_html5_menu()
 {
     register_nav_menus(array( // Using array to specify more menus if needed
         'menu-1' => 'Menu 1',
-        'menu-2' =>'Menu 2'
+        'menu-2' =>'Menu 2',
+        'mobile-1' => 'Mobile 1'
     ));
 }
 
@@ -234,6 +235,17 @@ if (function_exists('register_sidebar'))
         'before_widget' => '<div id="%1$s" class="%2$s top-wdgt-r">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
+        'after_title' => '</h3>'
+    ));
+
+        // Define Sidebar Mobile
+    register_sidebar(array(
+        'name' => __('Mobile 1', 'Area for mobile buttons etc'),
+        'description' => __('Area for mobile buttons etc', 'html5blank'),
+        'id' => 'mobile-1',
+        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="title-2">',
         'after_title' => '</h3>'
     ));
 
