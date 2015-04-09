@@ -20,7 +20,7 @@ body {
 
 .post, .content {
   background: white;
-  padding: 50px 20px; }
+  padding: 20px; }
 
 /*======================================================== 
 header 
@@ -39,6 +39,7 @@ logo
 .logo {
   float: left;
   width: 70%;
+  max-width: 270px;
   display: block;
   position: relative;
   padding: 10px 0;

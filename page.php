@@ -7,13 +7,13 @@
 
 			<!-- article -->
 			<article class="content clear" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<div class="p-wrap">
+					<?php the_content(); ?>
 
-				<?php the_content(); ?>
+					<?php comments_template( '', true ); // Remove if you don't want comments ?>
 
-				<?php comments_template( '', true ); // Remove if you don't want comments ?>
-
-				<br class="clear">
-
+					<br class="clear">
+				</div>
 			</article>
 			<!-- /article -->
 

@@ -51,6 +51,8 @@
 				<!-- /nav -->
       		</header>
 			<!-- /header -->
-			<div class="mble-btns">
-				<?php dynamic_sidebar('mobile-1'); ?>
-			</div>
+			<?php if (is_home() || is_front_page()) { ?>
+				<div class="mble-btns">
+					<?php dynamic_sidebar('mobile-1'); ?>
+				</div>
+			<?php }; ?>

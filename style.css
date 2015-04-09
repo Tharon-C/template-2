@@ -229,7 +229,7 @@ img {display:block;vertical-align:bottom;}
 }
 /* M stands for medium. M styles get triggered at 45em, that is, 720px */
 @media (max-width: 45em) {
-  .m-p-c {margin-right:auto;margin-left:auto;}
+  .m-p-c {float:none;margin-right:auto;margin-left:auto;}
   .m-block {display: block;}
   .m-full {width: 100%;}
   .m-1-2, .m-2-4 {width: 50%;}
