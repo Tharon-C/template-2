@@ -1,5 +1,5 @@
 a {
-  color: #00a9ff; }
+  color: #d67d00; }
 
 body {
   background: white; }
@@ -196,22 +196,22 @@ footer {
   margin: 10px; }
 
 .color-1 {
-  background: #00a9ff; }
+  background: #d67d00; }
 
 .color-2 {
-  background: #0386c9; }
+  background: #b26701; }
 
 .color-3 {
-  background: #f7a710; }
+  background: #165b85; }
 
 .color-4 {
-  background: #9370e9; }
+  background: #6e9fa4; }
 
 .color-5 {
-  background: #e5e5e5; }
+  background: #3f646c; }
 
 .color-6 {
-  background: #ddd5f8; }
+  background: #07619d; }
 
 .grey-1 {
   background: whitesmoke; }
@@ -238,22 +238,22 @@ footer {
   background: black; }
 
 .txt-color-1 {
-  color: #00a9ff; }
+  color: #d67d00; }
 
 .txt-color-2 {
-  color: #0386c9; }
+  color: #b26701; }
 
 .txt-color-3 {
-  color: #f7a710; }
+  color: #165b85; }
 
 .txt-color-4 {
-  color: #9370e9; }
+  color: #6e9fa4; }
 
 .txt-color-5 {
-  color: #e5e5e5; }
+  color: #3f646c; }
 
 .txt-color-6 {
-  color: #ddd5f8; }
+  color: #07619d; }
 
 .txt-wht {
   color: whitesmoke; }
@@ -280,7 +280,7 @@ ul li, ol li {
   display: block;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 32px;
   line-height: 1.2em;
   margin: 0 0 15px -3px; }
 
@@ -340,7 +340,7 @@ ul li, ol li {
 
 .input:focus, textarea:focus {
   outline: none;
-  border-color: #00a9ff; }
+  border-color: #d67d00; }
 
 .input[type='button'], .input[type='submit'], .button, .button {
   border: none;
@@ -355,22 +355,22 @@ ul li, ol li {
 .form-btn-1, .btn-1 {
   padding: 10px 20px;
   color: whitesmoke;
-  background-color: #0386c9; }
+  background-color: #b26701; }
   .form-btn-1:hover, .btn-1:hover {
-    background-color: #026597; }
+    background-color: #7f4801; }
   .form-btn-1:active, .form-btn-1:focus, .btn-1:active, .btn-1:focus {
-    background-color: #0386c9; }
+    background-color: #b26701; }
   .form-btn-1:hover, .btn-1:hover {
     color: whitesmoke; }
 
 .btn-2 {
   padding: 10px 20px;
   color: whitesmoke;
-  background-color: #f7a710; }
+  background-color: #165b85; }
   .btn-2:hover {
-    background-color: #cd8807; }
+    background-color: #0f3e59; }
   .btn-2:active, .btn-2:focus {
-    background-color: #f7a710; }
+    background-color: #165b85; }
   .btn-2:hover {
     color: whitesmoke; }
 

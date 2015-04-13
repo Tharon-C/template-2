@@ -32,12 +32,12 @@ $grey-5: rgba(140,140,140,1);
 $grey-6: rgba(100,100,100,1);
 $grey-7: rgba(50,50,50,1);
 $grey-8: black;
-$color-1: rgba(0,169,255,1);
-$color-2: rgba(3,134,201,1);
-$color-3: rgba(247,167,16,1);
-$color-4: rgba(147,112,233,1);
-$color-5: rgba(229, 229, 229,1);
-$color-6: rgba(221,213,248,1);
+$color-1: rgba(214,125,0,1);
+$color-2: rgba(178,103,1,1);
+$color-3: rgba(22,91,133,1);
+$color-4: rgba(110,159,164,1);
+$color-5: rgba(63,100,108,1);
+$color-6: rgba(7,97,157,1);
 $pattern-1: url('../img/pattern.img');
 $gradient-1:linear-gradient(to bottom, #1e5799 0%,#7db9e8 100%);
 $shadow-1: 0 1px 2px rgba(0, 0, 0, 0.21);
@@ -386,7 +386,7 @@ ul li, ol li {line-height: 130%;}
   display:block;
   font-family:$font-1;
   font-weight: 700;
-  font-size:22px;
+  font-size:32px;
   line-height: 1.2em;
   margin: 0 0 15px -3px;
 }
