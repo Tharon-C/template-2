@@ -42,6 +42,9 @@ function load_fonts() {
     wp_register_style('open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,700');
     wp_enqueue_style( 'open-sans');
 
+    wp_register_style('oswald', 'http://fonts.googleapis.com/css?family=Oswald:400,300');
+    wp_enqueue_style( 'oswald');
+    
     wp_register_style('font-awsome', '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
     wp_enqueue_style( 'font-awsome');
 }
@@ -216,6 +219,26 @@ function add_slug_to_body_class($classes)
 // If Dynamic Sidebar Exists
 if (function_exists('register_sidebar'))
 {
+    register_sidebar( array(
+        'name' => __( 'First Front Page Widget Area', 'twentytwelve' ),
+        'id' => 'sidebar-2',
+        'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'twentytwelve' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Second Front Page Widget Area', 'twentytwelve' ),
+        'id' => 'sidebar-3',
+        'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'twentytwelve' ),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+
     // Define Sidebar Top Left
     register_sidebar(array(
         'name' => __('Top Left', 'Area for business info etc'),

@@ -32,7 +32,7 @@ $grey-5: rgba(140,140,140,1);
 $grey-6: rgba(100,100,100,1);
 $grey-7: rgba(50,50,50,1);
 $grey-8: black;
-$color-1: rgba(214,125,0,1);
+$color-1: #950A0A;
 $color-2: rgba(178,103,1,1);
 $color-3: rgba(22,91,133,1);
 $color-4: rgba(110,159,164,1);
@@ -401,13 +401,11 @@ ul li, ol li {line-height: 130%;}
   margin: -20px 0 10px;
 }
 
-.title-1 {
-  display:block;
-  font-family:$font-1;
-  font-weight: 400;
-  font-size:22px;
-  line-height: 1.2em;
-   margin-bottom:15px;
+.title-1, .entry-title {
+  color: rgb(149, 10, 10);
+  font-family: 'Oswald',sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .title-2 {
@@ -501,4 +499,151 @@ ul li, ol li {line-height: 130%;}
   padding:10px;
   background:$grey-3;
   box-shadow:$shadow-1;
+}
+
+.services-pest-box {
+  margin: 13px 0 0 0;
+  width: 100%;
+  padding: 33px 51px 0 27px;
+  background: url(../images/wasp-box.png) no-repeat;
+  height: 143px;
+}
+
+.services-termite-box {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 33px 66px 0 27px;
+  background: url(../images/termite-box.png) no-repeat;
+  height: 143px;
+}
+
+.services-weed-box {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 46px 65px 0 27px;
+  background: url(../images/weeds-box.png) no-repeat;
+  height: 143px;
+}
+
+.services-offer-box {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 29px 0 0 0;
+  background: url(../images/service-box.png)no-repeat;
+  height: 143px;
+}
+
+.services-offer-box h2 {
+  font-size: 36px;
+  vertical-align: top;
+  line-height: 37px;
+  text-align: center;
+}
+
+.services-offer-box .sub-text {
+  width: 100%;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  color: rgb(26, 26, 26);
+  text-transform: uppercase;
+  margin: 3px 0 0 0;
+}
+
+.right-ant-box {
+  background: url(../images/ant-box.png) no-repeat;
+  width: 100%;
+  height: 151px;
+  margin-bottom: 20px;
+  padding: 26px 30px 0 29px;
+}
+
+h1 {
+  color: rgb(149, 10, 10);
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: rgb(149, 10, 10);
+  font-size: 22px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+.services-learn a {
+  text-decoration: none;
+  line-height: 27px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background: rgb(149, 10, 10);
+  display: block;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.right-ant-box .see-list a {
+  text-decoration: none;
+  line-height: 33px;
+  width: 94px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background: rgb(149, 10, 10);
+  display: block;
+  text-transform: uppercase;
+}
+
+.learnmore a {
+  font-size: 12px;
+  color: rgb(149, 10, 10);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.category #jumpnav {
+  display:none;
+}
+
+#jumpnav {
+  list-style:none;
+  margin:10px 0px!important;
+  display:inline-block;
+  height:27px;
+  padding-top:5px;
+  border-right:1px #dad9d9 solid;
+}
+
+#jumpnav li {
+  float:left;
+  list-style:none;
+  display:inline;
+}
+
+#jumpnav li a:link, #jumpnav li a:visited, #jumpnav li a:active {
+  color:#333;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:normal;
+  padding:7px 25px;
+  background-color:#EFEFEA;
+  border-top:1px #dad9d9 solid;
+  border-left:1px #dad9d9 solid;
+  border-bottom:1px #dad9d9 solid;
+  border-right:1px #fff solid;
+}
+
+#jumpnav li a:hover {
+  color:#000;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:normal;
+  padding:7px 25px;
+  background-color:#dcdcdc;
+  border-top:1px #dad9d9 solid;
+  border-left:1px #dad9d9 solid;
+  border-bottom:1px #dad9d9 solid;
+  border-right:1px #fff solid;
 }
