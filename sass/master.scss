@@ -214,25 +214,6 @@ footer items
     ul {
       padding-left:0;
     }
-    .widget_nav_menu {
-      width: 33.3%;
-      float: left;
-      border-right: solid 1px rgb(194, 194, 194);
-      padding-left: 35px;
-       @media (max-width: 45em) {
-        float:none;
-        width:90%;
-        }
-    }
-    .widget_text {
-      padding-left: 36px;
-      width: 33.3%;
-      float: left;
-       @media (max-width: 45em) {
-        float:none;
-        width:90%;
-        } 
-    }
 }
 
 /*=============================================================== 

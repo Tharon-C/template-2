@@ -1,7 +1,7 @@
 			
             <div class="footer-items footer-1">
                 <div class="page-wrapper clear">               
-					<?php dynamic_sidebar('footer-1'); ?>
+					<?php dynamic_sidebar('tagline-footer-box'); ?>
 				</div>
 			</div>
     <footer class="footer-2">      

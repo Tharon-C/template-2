@@ -139,23 +139,6 @@ footer items
   color: #525252; }
   .footer-items ul {
     padding-left: 0; }
-  .footer-items .widget_nav_menu {
-    width: 33.3%;
-    float: left;
-    border-right: solid 1px #c2c2c2;
-    padding-left: 35px; }
-    @media (max-width: 45em) {
-      .footer-items .widget_nav_menu {
-        float: none;
-        width: 90%; } }
-  .footer-items .widget_text {
-    padding-left: 36px;
-    width: 33.3%;
-    float: left; }
-    @media (max-width: 45em) {
-      .footer-items .widget_text {
-        float: none;
-        width: 90%; } }
 
 /*=============================================================== 
 footer 
