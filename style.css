@@ -32,7 +32,7 @@ article li {margin-bottom: 20px;}
 img {display:block;vertical-align:bottom;}
 /*helper classes*/
 .hide {display: none !important;}
-.flex {width:100%;}
+.flex {width:100%; display: block;}
 .inlineblk {display:inline-block;}
 .block {display: block;}
 .rnd {border-radius:900px; overflow: hidden;}
