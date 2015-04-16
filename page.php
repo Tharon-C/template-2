@@ -7,10 +7,8 @@
 
 			<!-- article -->
 			<article class="content clear" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-				<div class="p-wrap">
 					<?php the_content(); ?>
 					<br class="clear">
-				</div>
 			</article>
 			<!-- /article -->
 

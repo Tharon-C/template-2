@@ -1,5 +1,5 @@
 a {
-  color: #294D70; }
+  color: #E67124; }
 
 body {
   background: white; }
@@ -144,7 +144,7 @@ footer items
 footer 
 ================================================================*/
 footer {
-  background: #646464;
+  background: #212121;
   text-align: center;
   color: whitesmoke;
   padding: 10px;
@@ -162,10 +162,10 @@ footer {
   margin: 10px; }
 
 .color-1 {
-  background: #294D70; }
+  background: #E67124; }
 
 .color-2 {
-  background: #F8B014; }
+  background: #813A97; }
 
 .color-3 {
   background: #283545; }
@@ -204,10 +204,10 @@ footer {
   background: black; }
 
 .txt-color-1 {
-  color: #294D70; }
+  color: #E67124; }
 
 .txt-color-2 {
-  color: #F8B014; }
+  color: #813A97; }
 
 .txt-color-3 {
   color: #283545; }
@@ -302,7 +302,7 @@ ul li, ol li {
 
 .input:focus, textarea:focus {
   outline: none;
-  border-color: #294D70; }
+  border-color: #E67124; }
 
 .input[type='button'], .input[type='submit'], .button, .button {
   border: none;
@@ -318,11 +318,11 @@ ul li, ol li {
   padding: 10px 20px;
   color: whitesmoke;
   margin-bottom: 20px;
-  background-color: #294D70; }
+  background-color: #E67124; }
   .form-btn-1:hover, .btn-1:hover {
-    background-color: #1b344b; }
+    background-color: #c15816; }
   .form-btn-1:active, .form-btn-1:focus, .btn-1:active, .btn-1:focus {
-    background-color: #294D70; }
+    background-color: #E67124; }
   .form-btn-1:hover, .btn-1:hover {
     color: whitesmoke; }
 
